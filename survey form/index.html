@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="tittle-text">Customer Survey Form</h1>
+        <p id="description" class="description tittle-text">
+          Customer Survey Form is designed to know the overall satisfactions of
+          our customer on your provided services.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Your Email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Mobile No</label>
+          <input
+            type="number"
+            id="number"
+            class="form-control"
+            min="8"
+            max="10"
+            placeholder="Your Mobile Number"
+          />
+        </div>
+        <div class="form-group">
+          <label id="age-label" for="age">Age <span class="clue">[optional]</span> </label>
+          <input
+            type="number"
+            id="number"
+            class="form-control"
+            min="10"
+            max="100"
+            placeholder="Age"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Is this first time you are using our products and services?</p>
+          <select name="dropdown" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select your answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Would you recommend our products and service to your friends and
+            colleagues?
+          </p>
+           <label><input type="radio" class="input-radio" value="Yes" name="stand" />Yes</label>
+           <label><input type="radio" class="input-radio" value="No" name="stand" />No</label>
+           <label><input type="radio" class="input-radio" value="Maybe" name="stand" />Maybe</label>         
+        </div>
+
+        <div class="form-group">
+        <p>How satisfied are you with our company overall</p>
+        <label><input type="checkbox" value="satisfied" name="scale" />Satisfied</label>
+        <label><input type="checkbox" value="undersatisfied" name="scale" /> Undersatisfied</label>
+        <label><input type="checkbox" value="unsatisfied" name="scale" />Unsatisfied</label>
+        </div>
+
+<div class="form-group">
+          <p>
+            What would you like us to improve on moving forward <span class="clue">[Check all that apply]</span>            
+          </p>
+           <label><input type="checkbox" class="input-check" value="products" name="stand" />Products</label>
+           <label><input type="checkbox" class="input-check" value="services" name="stand" />Services</label>
+           <label><input type="checkbox" class="input-check" value="both" name="stand" />Both</label>         
+        </div>
+        <div class="form-group">
+        <p>Any sugestions or feedbacks</p>
+        <textarea
+          name="textarea"
+          class="input-textarea"
+          id="textaera"
+          cols="30"
+          rows="10"
+          placeholder="Write your comments here"
+        ></textarea>
+        </div>
+
+        <div class="form-group">
+        <button type="submit" id="submit"  class="submit" value="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
